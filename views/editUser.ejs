@@ -1,0 +1,13 @@
+<%- include("header.ejs") %>
+
+<div class="container mt-5 w-50 pt-3 bg-dark shadow-lg">
+    <form action="/updateUser/<%=user._id%>" method="post">
+        <input name="name" class="form-control my-3" value="<%=user.name%>" type="text" placeholder="Enter your name">
+        <input type="email" name="email" class="form-control my-3" value="<%=user.email%>"  placeholder="Enter your email">
+        <input type="password" name="password" id="password" value="<%=user.password%>" placeholder="Enter your password" class="form-control my-3">
+        <button class=" btn btn-outline-warning my-2">Update</button>
+    </form>
+</div>
+
+
+<%- include("footer.ejs") %>
